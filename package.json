@@ -7,7 +7,11 @@
   },
   "main": "NodeService/index.js",
   "scripts": {
-    "heroku": "cd NodeService && node index.js"
+    "heroku": "cd NodeService && node index.js",
+    "start": "cd NodeService && nodemon index.js",
+    "web": "cd ReactApp && npm start",
+    "build": "cd ReactApp && npm run build",
+    "build_h": "SET SERVICE_URL=https://xo123.herokuapp.com/ && npm run build"
   },
   "dependencies": {
     "body-parser": "^1.15.2",

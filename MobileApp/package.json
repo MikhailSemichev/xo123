@@ -1,0 +1,9 @@
+{
+  "name": "react-app",
+  "homepage": ".",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "cordova run android"
+  }
+}

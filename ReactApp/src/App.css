@@ -1,0 +1,53 @@
+.app {
+  margin: auto;
+  max-width: 800px;
+  font-size: 20px;
+}
+
+.app-header {
+  display: flex;
+  background-color: #222;
+  color: white;
+}
+
+.app-logo {
+  animation: app-logo-spin infinite 20s linear;
+  height: 50px;
+}
+
+@keyframes app-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+h2 {
+  line-height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  min-width: 100px;
+  min-height: 40px;
+}
+
+/* start-page */
+
+.new-game {
+  display: flex;
+  height: 50px;
+}
+
+.new-game input {
+  flex: 1;
+  font-size: 20px;
+}
+
+.game-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.game-item span {
+  flex: 1;
+}

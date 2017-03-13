@@ -10,3 +10,10 @@ npm-debug.log
 # Docker
 Dockerfile
 docker-compose.yml
+
+MobileApp/platforms
+
+# Build
+ReactApp/build
+MobileApp/www
+npm-debug.log.*
