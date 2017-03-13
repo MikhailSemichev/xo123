@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Node.js",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/heroku/node-js-getting-started",
+  "name": "xo123",
+  "description": "xo123",
+  "repository": "https://github.com/MikhailSemichev/xo123",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static"],
+  "keywords": [],
   "image": "heroku/nodejs"
 }
