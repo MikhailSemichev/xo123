@@ -7,7 +7,7 @@
   },
   "main": "NodeService/index.js",
   "scripts": {
-    "heroku": "node index.js",
+    "heroku": "cd NodeService && node index.js"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
