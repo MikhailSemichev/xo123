@@ -1,1 +1,1 @@
-web: cd NodeService && node index.js
+web: npm run heroku
