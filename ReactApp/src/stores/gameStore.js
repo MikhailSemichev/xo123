@@ -19,5 +19,14 @@ class GameStore {
     startGame(name) {
         this.socket.emit('startGame', name);
     }
+
+    playGame(name) {
+        this.socket.emit('playGame', name);
+    }
+
+    clickTile(name, i, j) {
+        this.socket.emit('clickTile', {name, i, j});
+    }
+
 };
 export default new GameStore();

@@ -1,15 +1,42 @@
 import React, {Component} from 'react';
-//import {hashHistory} from 'react-router';
+import gameStore from '../stores/gameStore';
+import { observer } from 'mobx-react';
 
-export default class GamePage extends Component {
-	componentDidMount() {
+@observer
+class GamePage extends Component {
+	onClick = (i, j) => {
+		let name = this.props.params.name;
+		gameStore.clickTile(name, i, j);
 	}
 
 	render() {
+		let name = this.props.params.name;
+		console.log(gameStore.games);
+		let game = gameStore.games.find(g => g.name === name);
+
+		if(!game) return null;
+
 		return (
 			<div className="start-page">
-				Game Page
+				Game "{name}"
+				<table className="tiles">
+					<tbody>
+						{game.tiles.map((row, i) => (
+							<tr key={i}>
+								{row.map((col, j) => (
+									<td key={j}
+										className="cell"
+										onClick={() => this.onClick(i, j)}>
+										{col}
+									</td>
+								))}
+							</tr>
+						))}
+					</tbody>
+				</table>				
 			</div>
 		);
 	}
 }
+
+export default GamePage;

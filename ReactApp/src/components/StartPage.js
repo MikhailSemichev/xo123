@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import gameStore from '../stores/gameStore';
 import { observer } from 'mobx-react';
+import { hashHistory } from 'react-router';
 
 @observer
 class StartPage extends Component {
@@ -10,7 +11,7 @@ class StartPage extends Component {
 	};
 
 	playGame = (game) => {
-		alert(game.name);
+		hashHistory.push(`/game/${game.name}`);
 	};
 
 	render() {
