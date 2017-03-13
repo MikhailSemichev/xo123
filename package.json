@@ -1,0 +1,26 @@
+{
+  "name": "node-service",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "6.10.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "ci": "cd ../ReactApp && npm run ci",
+    "build": "cd ../ReactApp && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "lodash": "^4.13.1",
+    "socket.io": "^1.7.3",
+    "ws": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  }
+}
