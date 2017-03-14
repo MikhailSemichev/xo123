@@ -26,13 +26,39 @@ Web-site will now be running on [http://localhost:3000/](http://localhost:3000/)
 It communicates with Node Express Web Service [http://localhost:3333/](http://localhost:3333/) via web-sockets.
 
 
+## Deploy on hosting (Heroku)
+
+[How to deploy NodeJS on Heroku Tutorial](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
+
+```
+$ npm run build_h
+  commit_and_push_you_code_to_git_repository
+```
+
 
 ## Running Mobile Application using Cordova
-Install Cordova
-Android SDK or iOS SDK.
+Install Cordova [https://cordova.apache.org/docs/ru/latest/guide/cli/](https://cordova.apache.org/docs/ru/latest/guide/cli/)
 
-cordova run android
+```
+$ cd
+$ npm install -g cordova
+```
 
+Install Android SDK (and/or iOS SDK).
+[https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
+
+Install platforms:
+```
+$ cordova platform add browser
+$ cordova platform add android
+
+```
+
+Run in Android emulator (as example):
+```
+$ cordova run android
+
+```
 
 
 
@@ -43,4 +69,5 @@ For more information on technologies:
 - [Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 - [React.js documentation](https://facebook.github.io/react/docs/hello-world.html)
 - [Mobx.js - best state management for React](https://mobx.js.org/)
+- [Cordova documentation](https://cordova.apache.org/docs/ru/latest/guide/cli/index.html)
 

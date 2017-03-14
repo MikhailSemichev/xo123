@@ -7,7 +7,7 @@ let server = http.createServer(app);
 
 let bodyParser = require('body-parser');
 let cors = require('cors');
-let nocache = require('nocache')
+let nocache = require('nocache');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -15,15 +15,14 @@ app.use(cors());
 app.options('*', cors());
 app.use(nocache());
 
-app.use(express.static('www'));
-
-/// 
-
+ 
+/*
 app.get('/', (req, res) => {
 	res.send('Hello world');
 });
+*/
 
-///
+app.use(express.static('www'));
 
 require('./restApi')(app); 
 require('./webSocket')(app); 
