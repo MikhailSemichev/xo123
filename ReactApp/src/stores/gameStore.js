@@ -24,8 +24,8 @@ class GameStore {
         this.socket.emit('playGame', name);
     }
 
-    clickTile(name, i, j) {
-        this.socket.emit('clickTile', {name, i, j});
+    clickCell(name, i, j) {
+        this.socket.emit('clickCell', {name, i, j});
     }
 
 };

@@ -1,39 +1,40 @@
 import React, {Component} from 'react';
 import gameStore from '../stores/gameStore';
 import { observer } from 'mobx-react';
+import { hashHistory } from 'react-router';
 
 @observer
 class GamePage extends Component {
-	onClick = (i, j) => {
-		let name = this.props.params.name;
-		gameStore.clickTile(name, i, j);
+	onClick = (name, i, j) => {
+		gameStore.clickCell(name, i, j);
 	}
 
 	render() {
 		let name = this.props.params.name;
-		console.log(gameStore.games);
 		let game = gameStore.games.find(g => g.name === name);
 
 		if(!game) return null;
 
 		return (
 			<div className="start-page">
-				Game "{name}"
-				<table className="tiles">
-					<tbody>
-						{game.tiles.map((row, i) => (
-							<tr key={i}>
-								{row.map((col, j) => (
-									<td key={j}
-										className="cell"
-										onClick={() => this.onClick(i, j)}>
-										{col}
-									</td>
-								))}
-							</tr>
-						))}
-					</tbody>
-				</table>				
+				<button onClick={hashHistory.goBack}> &lt;= BACK</button>
+				
+				<div className="cells">
+					{game.cells.map((row, i) => (
+						<div
+							className="row" 
+							key={i}>
+							{row.map((cell, j) => (
+								<div
+									className="cell"
+									key={j}
+									onClick={() => this.onClick(name, i, j)}>
+									{cell}
+								</div>
+							))}
+						</div>
+					))}
+				</div>				
 			</div>
 		);
 	}

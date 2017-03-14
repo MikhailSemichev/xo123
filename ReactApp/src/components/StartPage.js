@@ -7,6 +7,7 @@ import { hashHistory } from 'react-router';
 class StartPage extends Component {
 	startGame = () => {
 		let name = this.nameInput.value;
+		this.nameInput.value = '';
 		gameStore.startGame(name);
 	};
 
@@ -22,6 +23,7 @@ class StartPage extends Component {
 					<input type="text" ref={ref => this.nameInput = ref} />
 					<button onClick={this.startGame}>Start !</button>
 				</div>
+				
 				<hr/>
 
 				<ul>

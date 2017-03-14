@@ -16,7 +16,7 @@ export default class App extends Component {
 			<div className="app">
 				<div className="app-header">
 					<img src={logo} className="app-logo" alt="logo" />
-					<h2>Welcome to React</h2>
+					<h2>React - xo123</h2>
 				</div>
 
 				<Router history={hashHistory}>

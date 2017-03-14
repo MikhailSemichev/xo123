@@ -1,65 +1,80 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
 .app {
-  margin: auto;
-  max-width: 800px;
-  font-size: 20px;
+	margin: auto;
+	max-width: 800px;
+	font-size: 20px;
 }
 
 .app-header {
-  display: flex;
-  background-color: #222;
-  color: white;
+	display: flex;
+	background-color: #222;
+	color: white;
 }
 
 .app-logo {
-  animation: app-logo-spin infinite 20s linear;
-  height: 50px;
+	animation: app-logo-spin infinite 20s linear;
+	height: 50px;
 }
 
 @keyframes app-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
 }
 
 h2 {
-  line-height: 50px;
-  padding: 0;
-  margin: 0;
+	line-height: 50px;
+	padding: 0;
+	margin: 0;
 }
 
 button {
-  min-width: 100px;
-  min-height: 40px;
+	min-width: 100px;
+	min-height: 40px;
 }
 
 /* start-page */
 
 .new-game {
-  display: flex;
-  height: 50px;
+	display: flex;
+	height: 50px;
 }
 
 .new-game input {
-  flex: 1;
-  font-size: 20px;
+	flex: 1;
+	font-size: 20px;
 }
 
 .game-item {
-  display: flex;
-  margin-bottom: 10px;
+	display: flex;
+	margin-bottom: 10px;
 }
 
 .game-item span {
-  flex: 1;
+	flex: 1;
 }
 
 /* game-page */
 
-.tiles {
-  width: 100%;
-  border: 1px solid black;
+.row {
+	display: flex;
 }
 
 .cell {
-   border: 1px solid black;
-   height: 40px;
+	border: 1px solid black;
+	height: 40px;
+	flex: 1 1;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
+@media (min-width: 300px) {
+  .cell {
+    font-size: 30px;
+  }
 }
