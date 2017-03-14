@@ -9,9 +9,9 @@
   "scripts": {
     "start": "cd NodeService && nodemon index.js",
     "web": "cd ReactApp && npm start",
-    
-    "heroku_start": "npm run heroku_build && cd NodeService && node index.js",
-    "heroku_build": "SET SERVICE_URL=https://xo123.herokuapp.com/ && npm run build",
+
+    "heroku_start": "cd NodeService && node index.js",
+    "build_h": "SET SERVICE_URL=https://xo123.herokuapp.com/ && npm run build",
     "build": "cd ReactApp && npm i && npm run build"
   },
   "dependencies": {
