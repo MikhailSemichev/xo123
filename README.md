@@ -62,6 +62,8 @@ Run in Android emulator (as example):
 $ cordova run android
 ```
 
+Do not forget to run "$ npm run build" or "$ npm run build_h" to make sure that ReactApp/build folder copied to MobileApp/www folder
+
 ## Electron Application
 
 
@@ -70,8 +72,9 @@ Install Electron:
 $ cd ElectronApp
 $ npm install -g electron
 $ npm install
+$ npm start
 ```
-
+Do not forget to run "$ npm run build" or "$ npm run build_h" to make sure that ReactApp/build folder copied to ElectronApp/www folder
 
 ## Documentation
 
@@ -85,4 +88,7 @@ For more information on technologies:
 - [Hosting Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
 - [Cordova documentation](https://cordova.apache.org/docs/ru/latest/guide/cli/index.html)
+
+- [Electron documentation]
+(https://electron.atom.io/)
 
