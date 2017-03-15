@@ -16,5 +16,7 @@ MobileApp/platforms
 # Build
 ReactApp/build
 MobileApp/www
+ElectronApp/www
 npm-debug.log.*
 JavaScript - дверь во все платформы.pptx
+~$JavaScript - дверь во все платформы.pptx

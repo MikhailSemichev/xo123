@@ -40,34 +40,49 @@ $ npm run build_h
 Install Cordova [https://cordova.apache.org/docs/ru/latest/guide/cli/](https://cordova.apache.org/docs/ru/latest/guide/cli/)
 
 ```
-$ cd
+$ cd MobileApp
 $ npm install -g cordova
 ```
 
 Install Android SDK (and/or iOS SDK).
 [https://developer.android.com/studio/index.html](https://developer.android.com/studio/index.html)
 
+Install JDK (Java Development Kit)[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+
+
 Install platforms:
 ```
 $ cordova platform add browser
 $ cordova platform add android
-
 ```
 
 Run in Android emulator (as example):
 ```
 $ cordova run android
-
 ```
 
+## Electron Application
+
+
+Install Electron:
+```
+$ cd ElectronApp
+$ npm install -g electron
+$ npm install
+```
 
 
 ## Documentation
 
 For more information on technologies:
-
-- [Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 - [React.js documentation](https://facebook.github.io/react/docs/hello-world.html)
 - [Mobx.js - best state management for React](https://mobx.js.org/)
+
+- [Node.js documentation](https://nodejs.org/en/)
+- [Express documentation](https://expressjs.com/en/api.html)
+- [Socket.io documentation](http://devdocs.io/socketio/)
+- [Hosting Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+
 - [Cordova documentation](https://cordova.apache.org/docs/ru/latest/guide/cli/index.html)
 
