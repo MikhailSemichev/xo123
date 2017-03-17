@@ -18,5 +18,6 @@ app.on('ready', function createWindow() {
     slashes: true
   }));
 
-  // Open the DevTools. mainWindow.webContents.openDevTools();
+  // Open the DevTools. 
+  // mainWindow.webContents.openDevTools();
 });

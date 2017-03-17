@@ -20,10 +20,6 @@ class GameStore {
         this.socket.emit('startGame', name);
     }
 
-    playGame(name) {
-        this.socket.emit('playGame', name);
-    }
-
     clickCell(name, i, j) {
         this.socket.emit('clickCell', {name, i, j});
     }
